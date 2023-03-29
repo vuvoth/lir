@@ -7,8 +7,10 @@ use halo2_proofs::{
 
 use crate::backend::halo2::utils::Expr;
 use crate::impl_expr;
+use strum::IntoEnumIterator;
+use strum_macros::EnumIter;
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, EnumIter)]
 pub enum BinOpTag {
     ADD = 1,
     MUL,
@@ -25,7 +27,6 @@ pub enum BinOpTag {
     XOR,
     OR,
     EQ,
-    NOT,
 }
 impl_expr!(BinOpTag);
 

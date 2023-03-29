@@ -34,3 +34,5 @@ ark-ec = "0.3.0"
 ark-std = "0.3.0"
 
 halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2", tag = "v2023_02_02", optional = true }
+strum = "0.24.1"
+strum_macros = "0.24.3"
