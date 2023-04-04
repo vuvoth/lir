@@ -312,7 +312,7 @@ impl RegisterTable {
     pub fn construct<F: FieldExt>(meta: &mut ConstraintSystem<F>) -> Self {
         Self {
             index: meta.fixed_column(),
-            value: meta.advice_column_in(SecondPhase),
+            value: meta.advice_column_in(FirstPhase),
         }
     }
 
