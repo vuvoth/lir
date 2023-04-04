@@ -244,8 +244,8 @@ mod tests {
 
     #[test]
     fn circuit_test() {
-        let k = 20;
-        let circuit = BinOpCircuit::<Fr>::new(1, 1, 1, 1);
+        let k = 12;
+        let circuit = BinOpCircuit::<Fr>::new(1, 1, 1, 2);
         let prover = MockProver::<Fr>::run(k, &circuit, vec![]).unwrap();
         prover.verify().unwrap();
     }
